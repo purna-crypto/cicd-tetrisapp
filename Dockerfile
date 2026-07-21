@@ -8,7 +8,7 @@ ENV NODE_OPTIONS=--openssl-legacy-provider
 COPY package*.json ./ 
 RUN npm install
 
-COPY . 
+COPY . .
 RUN npm run build
 
 # ---------- Runtime Stage ---------- 
